@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int eingabe(){
     int input = -1;

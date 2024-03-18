@@ -1,17 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "eingabe.h"
 
 int main(void){
     int input = -1, quersumme = 0;
 
-	do {
-		printf("Bitte positive Zahl eingeben: ");
-		if(scanf("%d", &input) != 1){
-			scanf("%*[^\n]");
-			input = -1;
-			continue;
-		}
-	} while (input < 0);
+	input = eingabe();
 
     while(input > 0){
         quersumme += input%10;
