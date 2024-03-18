@@ -2,14 +2,13 @@
 #include <stdlib.h>
 
 int eingabe(){
-    int input = -1;
+    int input = INT_MIN;
     do{
-        printf("Bitte positive Zahl eingeben: ");
         if(scanf("%d", &input) != 1){
             scanf("%*[^/n]");
-            input = -1;
+            input = INT_MIN;
             continue;
         }
-    }while(input <= 0);
+    }while(input == INT_MIN);
     return input;
 }
