@@ -21,7 +21,7 @@ int main(void){
     }
 
     printf("Fertig.\n");
-    
+
     free(arr);
     arr = NULL;
     return EXIT_SUCCESS;
