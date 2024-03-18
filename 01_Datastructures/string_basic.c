@@ -1,8 +1,7 @@
-#include <strings.h>>
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (void){
+int main(void){
 
     char myString[5] = "Hallo";
     printf("%s", myString);
