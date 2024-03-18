@@ -1,6 +1,4 @@
-struct li {
+struct Listitem {
     int zahl;
-    struct li *next;
+    struct Listitem *next;
 };
-
-typedef struct li li;
