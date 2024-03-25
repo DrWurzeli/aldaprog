@@ -63,5 +63,6 @@ int main(void){
             default: break;
         }
     }while(input != 4);
+    printf("Bye bye.\n");
     return EXIT_SUCCESS;
 }
