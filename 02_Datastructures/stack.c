@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "eingabe.h"
 
 struct stackelement{
     int val;
@@ -52,13 +51,17 @@ void printStack(){
 
 int main(void){
     printf("Starting...\n");
-    push(1);
-    push(2);
-    push(3);
-    push(4);
-    push(5);
-    int topval = pop();
-    printf("Top element was: %d\n", topval);
-    printStack();
+    int input = INT_MIN;
+    do{
+        printf("Menu. Choose an action:\n");
+        printf("1 | PrintStack\n2 | Add Element\n3 | Pop Element.\n4 | Ende.\n");
+        input = eingabe();
+        switch(input){
+            case 1: printStack(); break;
+            case 2: push(eingabe()); break;
+            case 3: printf("Popped: %d\n", pop()); break;
+            default: break;
+        }
+    }while(input != 4);
     return EXIT_SUCCESS;
 }
