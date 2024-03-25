@@ -1,0 +1,8 @@
+reverse polish notation
+infix:
+(9-4-2)*(2+3*4^2)*sqrt(5+3/2)
+/
+-(2*4+cos(7))
+
+postfix:
+9 4 - 2 - 2 3 4 2 ^ * + * 3 2 / 5 + sqrt * 2 4 * 7 cos + -1 * /
