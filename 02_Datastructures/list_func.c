@@ -3,6 +3,8 @@
 
 typedef struct Listitem li;
 
+li *start = NULL;
+
 void appendToList(li *list){
     return;
 }
@@ -29,13 +31,10 @@ void newListitem(){
     }
     printf("Please enter a value (int): ");
     new->zahl = eingabe();
-    free(new);
+    //appendToList(new);
 }
 
 int main(void){
-
-    li *start = NULL;
-    newListitem();
 
     return EXIT_SUCCESS;
 }
